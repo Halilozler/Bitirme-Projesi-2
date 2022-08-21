@@ -7,7 +7,7 @@ namespace Backend.DataAccess
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=sql.athena.domainhizmetleri.com,1433 (MS SQL Sunucusu);Database=haliloz1_deneme;User Id=haliloz1_1;Password='28nisan99'");
+            optionsBuilder.UseSqlServer(@"Server=sql.athena.domainhizmetleri.com,1433 (MS SQL Sunucusu);Database=haliloz1_deneme;User Id=haliloz1_1;Password='password'");
         }
 
         public DbSet<Begenme> tbl_Begenme { get; set; }
